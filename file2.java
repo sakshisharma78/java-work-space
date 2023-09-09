@@ -1,20 +1,17 @@
-
-import java.util.Scanner;
+import java.util.*;
 
 public class file2 {
     public static void main(String[] args) {
-        int i = 1;
-        Scanner Sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter the value n : ");
-        int n = Sc.nextInt();
+        System.out.println("enter n");
+        int n = sc.nextInt();
 
-        System.out.println("Numbers are : ");
-
-        do {
+        for (int i = n; i > 0; i--) {
             System.out.println(i);
-            i++;
-        } while (i <= n);
+
+        }
+
     }
 
 }

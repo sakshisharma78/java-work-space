@@ -1,23 +1,20 @@
 
-import java.util.Scanner;
+import java.util.*;
 
 public class file7 {
-    public static void main(String args[]) {
-        int r, sum = 0, temp;
-        Scanner Sc = new Scanner(System.in);
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
         System.out.println("enter n");
+        int n = sc.nextInt();
+        int t = 0;
 
-        int n = Sc.nextInt();
+        for (int i = 1; i <= 10; i++) {
+            t = n * i;
+            System.out.println(n + "*" + i + "=" + t);
 
-        temp = n;
-        while (n > 0) {
-            r = n % 10;
-            sum = (sum * 10) + r;
-            n = n / 10;
         }
-        if (temp == sum)
-            System.out.println("palindrome number ");
-        else
-            System.out.println("not palindrome");
+
     }
+
 }

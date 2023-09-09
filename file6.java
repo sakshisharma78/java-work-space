@@ -1,20 +1,24 @@
 
-import java.util.Scanner;
+import java.util.*;
 
 public class file6 {
     public static void main(String[] args) {
-        int fact = 1;
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("enter n;");
+        // System.out.println("enter n");
+        // int n = sc.nextInt();
+        int n = 1;
+        int sum = 0;
 
-        int n = sc.nextInt();
+        while (n <= 100)
 
-        for (int i = 1; i <= n; i++) {
-            fact = i * fact;
+        {
+            if (n % 2 != 0)
+                sum += n;
+            n++;
 
         }
-        System.out.println(fact);
+        System.out.println(sum);
 
     }
 

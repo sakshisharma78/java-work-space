@@ -1,22 +1,20 @@
+
 import java.util.*;
 
 public class file8 {
-    public static void main(String args[]) {
-        int r, sum = 0, temp;
-        Scanner Sc = new Scanner(System.in);
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
         System.out.println("enter n");
+        int n = sc.nextInt();
+        int t = 0;
 
-        int n = Sc.nextInt();
-
-        temp = n;
-        while (n > 0) {
-            r = n % 10;
-            sum += Math.pow(temp, n);
-            n = n / 10;
+        while (n != 0) {
+            n /= 10;
+            ++t;
         }
-        if (temp == sum)
-            System.out.println("armstrong number ");
-        else
-            System.out.println("not armstrong");
+        System.out.println(t);
+
     }
+
 }
